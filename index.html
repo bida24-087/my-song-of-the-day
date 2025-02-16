@@ -14,67 +14,105 @@
             text-align: center;
             padding: 20px;
         }
+
+        /* Banner for H1 */
         h1 {
             font-size: 36px;
+            background-color: red;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
         }
+
         p {
             font-size: 20px;
         }
-        img {
+
+        /* Styling for main image (Today's Song) */
+        .main-image {
             display: block;
             margin: 20px auto;
             width: 300px;
             height: auto;
             border-radius: 10px;
         }
+
+        /* Styling for smaller images */
+        .small-image {
+            width: 150px; /* Smaller size */
+            height: auto;
+            border-radius: 10px;
+        }
+
         audio {
             display: block;
             margin: 10px auto;
         }
+
+        /* Change hyperlink color to red */
         a {
-            color: cyan;
+            color: red;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
+
+        /* Horizontal layout for past songs */
+        .song-log {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between items */
+        }
+
+        .song-entry {
+            text-align: center;
+            max-width: 200px;
+        }
     </style>
 </head>
 <body>
+
     <h1>Come hear what's between Lesedii's ears</h1>
 
-<div>
-    <p>Lesedii is a 21-year-old, self-described "musical pixie."<br>
-       Her love for the music she listens to creates an open channel for you to know what makes her day what it is.<br>
-       Is it amazing? Is it boring? Or maybe mid? You tell us, we'll confirm... LET'S PLAY (music).</p>
-    
-    <p>Don't judge, don't expect to hear <a href="https://youtu.be/KAFNIL7I33o">HIM!!</a> but trust, the vibes are still there.</p>
-</div>
-    
-<h3>LOG: WHAT'S ON AUX?</h3>
-
-<div>
-    <h5>TODAY'S SONG</h5>
-    <p>Fresh into the week and i feel like a BITCH! Soooo enough of the lovey dovey stuff, i have too much work to do and nothing's funny<br>it's time to tap it, lock in. This song is exactly what the doctor ordered, get over it with me.</p>
-    <img src="lucki.png" alt="cover art for ofc you wont">
-    <audio controls loop>
-        <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/LUCKI%20-%20OF%20COURSE%20YOU%20WON%E2%80%99T%20%5BaEYCWPcpEys%5D.mp3" type="audio/mpeg">
-    </audio>
-    
-</div>
-
-<div>
-    <h6>16.02.2025</h6>
-    <img src="beyonce.jpeg" alt="cover art for fortunate carriages">
-    <audio controls loop>
-        <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Beyonce%20&%20Maxwell%20-%20Fortunate%20Carriages%20(A%20JAYBeatz%20Mashup)%20%23HVLM.mp3" type="audio/mpeg">
-    </audio>
+    <div>
+        <p>Lesedii is a 21-year-old, self-described "musical pixie."<br>
+        Her love for the music she listens to creates an open channel for you to know what makes her day what it is.<br>
+        Is it amazing? Is it boring? Or maybe mid? You tell us, we'll confirm... LET'S PLAY (music).</p>
         
-    <h6>15.02.2026</h6>
-    <img src="Aaron.jpg" alt="Cover art for Aaron May's song 'In Love'">
-    <audio controls loop>
-        <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Aaron%20May%20-%20In%20Love%20(Audio).mp3" type="audio/mpeg">
-    </audio>
-</div>
+        <p>Don't judge, don't expect to hear <a href="https://youtu.be/KAFNIL7I33o">HIM!!</a> but trust, the vibes are still there.</p>
+    </div>
+    
+    <h3>LOG: WHAT'S ON AUX?</h3>
+
+    <div>
+        <h4>TODAY'S SONG</h4>
+        <p>Fresh into the week and i feel like a BITCH! Soooo enough of the lovey dovey stuff, i have too much work to do and nothing's funny<br>it's time to tap it, lock in. This song is exactly what the doctor ordered, get over it with me.</p>
+        <img src="lucki.png" alt="cover art for ofc you wont" class="main-image">
+        <audio controls loop>
+            <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/LUCKI%20-%20OF%20COURSE%20YOU%20WON%E2%80%99T%20%5BaEYCWPcpEys%5D.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <h4>Previous Songs</h4>
+    <div class="song-log">
+        <div class="song-entry">
+            <h6>16.02.2025</h6>
+            <img src="beyonce.jpeg" alt="cover art for fortunate carriages" class="small-image">
+            <audio controls loop>
+                <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Beyonce%20&%20Maxwell%20-%20Fortunate%20Carriages%20(A%20JAYBeatz%20Mashup)%20%23HVLM.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song-entry">
+            <h6>15.02.2025</h6>
+            <img src="Aaron.jpg" alt="Cover art for Aaron May's song 'In Love'" class="small-image">
+            <audio controls loop>
+                <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Aaron%20May%20-%20In%20Love%20(Audio).mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
 </body>
 </html>
