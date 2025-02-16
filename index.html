@@ -5,23 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesedii's Song of the Day</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
+        /* Use a cleaner typewriter-style font */
         body {
             background-color: black;
             color: white;
-            font-family: 'VT323', monospace;
+            font-family: 'Courier New', Courier, monospace;
             text-align: center;
             padding: 20px;
         }
 
-        /* Banner for H1 */
-        h1 {
-            font-size: 36px;
-            background-color: red;
-            padding: 10px;
-            border-radius: 10px;
-            display: inline-block;
+        /* Deep cyan headings */
+        h1, h3, h4, h5, h6 {
+            color: #008B8B;
         }
 
         p {
@@ -47,6 +42,8 @@
         audio {
             display: block;
             margin: 10px auto;
+            width: 90%; /* Adjust width */
+            max-width: 300px; /* Keeps players neat */
         }
 
         /* Change hyperlink color to red */
@@ -58,12 +55,12 @@
             text-decoration: underline;
         }
 
-        /* Horizontal layout for past songs */
+        /* Horizontal layout for past songs with spacing */
         .song-log {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px; /* Space between items */
+            gap: 40px; /* More space between items */
         }
 
         .song-entry {
@@ -98,7 +95,7 @@
     <h4>Previous Songs</h4>
     <div class="song-log">
         <div class="song-entry">
-            <h6>16.02.2025</h6>
+            <h4>16.02.2025</h4>
             <img src="beyonce.jpeg" alt="cover art for fortunate carriages" class="small-image">
             <audio controls loop>
                 <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Beyonce%20&%20Maxwell%20-%20Fortunate%20Carriages%20(A%20JAYBeatz%20Mashup)%20%23HVLM.mp3" type="audio/mpeg">
@@ -106,7 +103,7 @@
         </div>
 
         <div class="song-entry">
-            <h6>15.02.2025</h6>
+            <h4>15.02.2025</h4>
             <img src="Aaron.jpg" alt="Cover art for Aaron May's song 'In Love'" class="small-image">
             <audio controls loop>
                 <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Aaron%20May%20-%20In%20Love%20(Audio).mp3" type="audio/mpeg">
