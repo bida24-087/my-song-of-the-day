@@ -13,6 +13,20 @@
             padding: 20px;
         }
 
+        header-banner {
+            background: url('background.png') no-repeat center center;
+            background-size: cover;
+            padding: 40px;
+            border-radius: 15px;
+        }
+        
+        intro-text {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
         h1, h3, h4, h5, h6 {
             color: cyan;
         }
@@ -60,9 +74,12 @@
     </style>
 </head>
 <body>
+    
+<div class="header-banner">
+    
     <h1>Come hear what's between Lesedii's ears</h1>
 
-    <div>
+    <div class="intro-text">
         <p>Lesedii is a 21-year-old, self-described "musical pixie."<br>
         Her love for the music she listens to creates an open channel for you to know what makes her day what it is.<br>
         Is it amazing? Is it boring? Or maybe mid? You tell us, we'll confirm... LET'S PLAY (music).</p>
@@ -70,19 +87,23 @@
         <p>Don't judge, don't expect to hear <a href="https://youtu.be/KAFNIL7I33o">HIM!!</a> but trust, the vibes are still there.</p>
     </div>
     
-    <h2>LOG: WHAT'S ON AUX?</h2>
+</div>
+    
+<h2>LOG: WHAT'S ON AUX?</h2>
 
-    <div>
+<div>
         <h4>TODAY'S SONG</h4>
         <p>welp, todays song was interrupted by some stupid shii. So today's song is heavily inspired by that. Here's a song about healing, revenge and prosperity.</p>
         <img src="DBD bash.jpeg" alt="cover art for darkest before dawn" class="main-image">
         <audio controls>
             <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Bashfortheworld%20-%20Darkest%20before%20Dawn.mp3" type="audio/mpeg">
         </audio>   
-    </div>
+</div>
 
-    <h4>Previous Songs</h4>
-    <div class="song-log">
+<h4>Previous Songs</h4>
+    
+<div class="song-log">
+        
         <div class="song-entry">
             <h4>18.02.2025</h4>
             <img src="emph4sis.jpeg" alt="cover art for do it" class="small-image">
@@ -114,7 +135,8 @@
                 <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Aaron%20May%20-%20In%20Love%20(Audio).mp3" type="audio/mpeg">
             </audio>
         </div>
-    </div>
+        
+</div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
