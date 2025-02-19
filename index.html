@@ -11,6 +11,7 @@
             font-family: 'Courier New', Courier, monospace;
             text-align: center;
             padding: 20px;
+            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
         }
 
         .header-banner {
@@ -27,19 +28,8 @@
             display: inline-block;
         }
 
-
-        h1, h3, h5, h6 {
-            color: cyan;
-        }
-
-        h4 {
-            color: cyan;
-            margin-top: 30px;
-        }
-
-        h2 {
-            color: yellow;
-            margin-bottom: 30px;
+        h1, h2, h3, h4, h5, h6 {
+            color: white;
         }
 
         p {
@@ -47,23 +37,26 @@
         }
 
         .todays-song {
-            background: white;
             padding: 20px;
             border-radius: 10px;
             display: inline-block;
-            color: black;
+            color: white;
         }
 
         .todays-song img {
-            width: 150px;
+            width: 200px;
             height: auto;
             border-radius: 10px;
         }
 
-        .main-image, .small-image {
+        .main-image {
+            width: 200px;
+            height: auto;
+        }
+
+        .small-image {
             width: 150px;
             height: auto;
-            border-radius: 10px;
         }
 
         audio {
@@ -71,9 +64,6 @@
             margin: 10px auto;
             width: 90%;
             max-width: 300px;
-            background: grey;
-            border-radius: 5px;
-            padding: 5px;
         }
 
         a {
@@ -100,9 +90,7 @@
 <body>
     
 <div class="header-banner">
-    
     <h1>Come hear what's between Lesedii's ears</h1>
-
     <div class="intro-text">
         <p>Lesedii is a 21-year-old, self-described "musical pixie."<br>
         Her love for the music she listens to creates an open channel for you to know what makes her day what it is.<br>
@@ -110,7 +98,6 @@
         
         <p>Don't judge, don't expect to hear <a href="https://youtu.be/KAFNIL7I33o">HIM!!</a> but trust, the vibes are still there.</p>
     </div>
-    
 </div>
     
 <h2>LOG: WHAT'S ON AUX?</h2>
@@ -129,7 +116,6 @@
 <h4>Previous Songs</h4>
     
 <div class="song-log">
-        
         <div class="song-entry">
             <h4>18.02.2025</h4>
             <img src="emph4sis.jpeg" alt="cover art for do it" class="small-image">
@@ -161,23 +147,22 @@
                 <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Aaron%20May%20-%20In%20Love%20(Audio).mp3" type="audio/mpeg">
             </audio>
         </div>
-        
 </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const audioElements = document.querySelectorAll("audio");
-            
-            audioElements.forEach(audio => {
-                audio.addEventListener("play", function () {
-                    audioElements.forEach(otherAudio => {
-                        if (otherAudio !== audio) {
-                            otherAudio.pause();
-                        }
-                    });
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const audioElements = document.querySelectorAll("audio");
+        
+        audioElements.forEach(audio => {
+            audio.addEventListener("play", function () {
+                audioElements.forEach(otherAudio => {
+                    if (otherAudio !== audio) {
+                        otherAudio.pause();
+                    }
                 });
             });
         });
-    </script>
+    });
+</script>
 </body>
 </html>
