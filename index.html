@@ -28,16 +28,36 @@
         }
 
 
-        h1, h3, h4, h5, h6 {
+        h1, h3, h5, h6 {
             color: cyan;
+        }
+
+        h4 {
+            color: cyan;
+            margin-top: 30px;
         }
 
         h2 {
             color: yellow;
+            margin-bottom: 30px;
         }
 
         p {
             font-size: 20px;
+        }
+
+        .todays-song {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            color: black;
+        }
+
+        .todays-song img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
         }
 
         .main-image, .small-image {
@@ -51,6 +71,9 @@
             margin: 10px auto;
             width: 90%;
             max-width: 300px;
+            background: grey;
+            border-radius: 5px;
+            padding: 5px;
         }
 
         a {
@@ -91,14 +114,16 @@
 </div>
     
 <h2>LOG: WHAT'S ON AUX?</h2>
-
-<div>
+    
+<div class="todays-song">
+    <div>
         <h4>TODAY'S SONG</h4>
         <p>welp, todays song was interrupted by some stupid shii. So today's song is heavily inspired by that. Here's a song about healing, revenge and prosperity.</p>
         <img src="DBD bash.jpeg" alt="cover art for darkest before dawn" class="main-image">
         <audio controls>
             <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Bashfortheworld%20-%20Darkest%20before%20Dawn.mp3" type="audio/mpeg">
         </audio>   
+    </div>
 </div>
 
 <h4>Previous Songs</h4>
