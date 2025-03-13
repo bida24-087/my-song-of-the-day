@@ -1,98 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesedii's Song of the Day</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-    
-<body class="home">
+<body class="home container">
 
-<div class="container text-center my-4">
-    <h1>Come hear what's between Lesedii's ears</h1>
-</div>
-    
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Lesedii's Playlist</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Beam Me UP</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-    
-<div class="container text-center my-4">
-    <p>Lesedii is a 21-year-old, self-described "musical pixie."<br>
-    Her love for the music she listens to creates an open channel for you to know what makes her day what it is.<br>
-    Is it amazing? Is it boring? Or maybe mid? You tell us, we'll confirm... LET'S PLAY (music).</p>
-    <p>Don't judge, don't expect to hear <a href="https://youtu.be/KAFNIL7I33o">HIM!!</a> but trust, the vibes are still there.</p>
-</div>
-    
-<div class="container text-center">
-    <h2>LOG: WHAT'S ON AUX?</h2>
-    <div class="card mx-auto" style="width: 22rem;">
-        <img src="Tyler.jpeg" class="card-img-top" alt="cover art for thought I was dead">
-        <div class="card-body">
-            <h4 class="card-title">TODAY'S SONG</h4>
-            <p class="card-text">Today's song was influenced by one of my friends. I remember when the album first came out... 🤦‍♂️</p>
-            <audio controls class="w-100">
-                <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Tyler,%20The%20Creator%20-%20Thought%20I%20Was%20Dead%20(Lyrics%20Video)%20ft.%20ScHoolboy%20Q,%20Santigold.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-    </div>
-</div>
+    <h1 class="text-center my-4">Come hear what's between Lesedii's ears</h1>
 
-<div class="container my-5">
+    <nav class="nav justify-content-center mb-4">
+        <a class="nav-link" href="index.html">!Home Page!</a>
+        <a class="nav-link" href="about.html">!About Me!</a>
+        <a class="nav-link" href="contact.html">!Beam me UP!</a>
+    </nav>
+
+    <div class="header-banner text-center p-4">
+        <p>Lesedii is a 21-year-old, self-described "musical pixie."<br>
+        Her love for the music she listens to creates an open channel for you to know what makes her day what it is.<br>
+        Is it amazing? Is it boring? Or maybe mid? You tell us, we'll confirm... LET'S PLAY (music).</p>
+        <p>Don't judge, don't expect to hear <a href="https://youtu.be/KAFNIL7I33o">HIM!!</a> but trust, the vibes are still there.</p>
+    </div>
+
+    <h2 class="text-center my-4">LOG: WHAT'S ON AUX?</h2>
+
+    <div class="todays-song text-center mb-4">
+        <h4>TODAY'S SONG</h4>
+        <p>Today's song was influenced by one of my friends... I'm in total agreement with this chaotic energy.</p>
+        <img src="Tyler.jpeg" alt="cover art for thought I was dead" class="img-fluid rounded">
+        <audio controls class="mt-2">
+            <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Tyler,%20The%20Creator%20-%20Thought%20I%20Was%20Dead%20(Lyrics%20Video)%20ft.%20ScHoolboy%20Q,%20Santigold.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
     <h4 class="text-center">Previous Songs</h4>
+
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        
-        <div class="col" id="previous-songs"></div>
-        
+        <div class="col" *ngFor="let song of songs">
+            <div class="card text-center p-3">
+                <h4>24.02.2025</h4>
+                <img src="saba.jpeg" alt="cover art for how to impress God" class="img-fluid rounded small-image">
+                <audio controls class="mt-2">
+                    <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Saba%20&%20No%20ID%20-%20How%20to%20Impress%20God.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center p-3">
+                <h4>23.02.2025</h4>
+                <img src="offshore.jpeg" alt="cover art for touchin the ceiling" class="img-fluid rounded small-image">
+                <audio controls class="mt-2">
+                    <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Touchin%20The%20Ceiling.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center p-3">
+                <h4>22.02.2025</h4>
+                <img src="nasa.jpeg" alt="cover art for nasa" class="img-fluid rounded small-image">
+                <audio controls class="mt-2">
+                    <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Rvdical%20The%20Kid%20-%20NASA%20ft.%20Amaarae%20(AUDIO).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center p-3">
+                <h4>21.02.2025</h4>
+                <img src="autumn.jpeg" alt="cover art for uptown coolin" class="img-fluid rounded small-image">
+                <audio controls class="mt-2">
+                    <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Uptown%20Coolin!%20-%20Autumn!%20(Lyrics).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center p-3">
+                <h4>20.02.2025</h4>
+                <img src="el manana.jpeg" alt="cover art for el manana" class="img-fluid rounded small-image">
+                <audio controls class="mt-2">
+                    <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Gorillaz%20-%20El%20Ma%C3%B1ana%20(Official%20Video).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
     </div>
-</div>
-    
-<script>
-    const songs = [
-        {date: "24.02.2025", img: "saba.jpeg", src: "Saba%20&%20No%20ID%20-%20How%20to%20Impress%20God.mp3"},
-        {date: "23.02.2025", img: "offshore.jpeg", src: "Touchin%20The%20Ceiling.mp3"},
-        {date: "22.02.2025", img: "nasa.jpeg", src: "Rvdical%20The%20Kid%20-%20NASA%20ft.%20Amaarae%20(AUDIO).mp3"},
-        {date: "21.02.2025", img: "autumn.jpeg", src: "Uptown%20Coolin!%20-%20Autumn!%20(Lyrics).mp3"},
-        {date: "20.02.2025", img: "el manana.jpeg", src: "Gorillaz%20-%20El%20Ma%C3%B1ana%20(Official%20Video).mp3"},
-        {date: "19.02.2025", img: "DBD bash.jpeg", src: "Bashfortheworld%20-%20Darkest%20before%20Dawn.mp3"},
-        {date: "18.02.2025", img: "emph4sis.jpeg", src: "Do%20it.mp3"},
-        {date: "17.02.2025", img: "lucki.png", src: "LUCKI%20-%20OF%20COURSE%20YOU%20WON%E2%80%99T%20%5BaEYCWPcpEys%5D.mp3"},
-        {date: "16.02.2025", img: "beyonce.jpeg", src: "Beyonce%20&%20Maxwell%20-%20Fortunate%20Carriages%20(A%20JAYBeatz%20Mashup)%20%23HVLM.mp3"},
-        {date: "15.02.2025", img: "Aaron.jpg", src: "Aaron%20May%20-%20In%20Love%20(Audio).mp3"}
-    ];
 
-    const songContainer = document.getElementById("previous-songs");
-    
-    songs.forEach(song => {
-        const songCard = `
-            <div class="col">
-                <div class="card text-center">
-                    <img src="${song.img}" class="card-img-top small-image" alt="cover art">
-                    <div class="card-body">
-                        <h5 class="card-title">${song.date}</h5>
-                        <audio controls class="w-100">
-                            <source src="https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/${song.src}" type="audio/mpeg">
-                        </audio>
-                    </div>
-                </div>
-            </div>`;
-        songContainer.innerHTML += songCard;
-    });
-</script>
-
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
