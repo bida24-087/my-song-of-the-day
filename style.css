@@ -197,3 +197,50 @@
 .about nav a:hover {
     text-shadow: 0 0 10px white;
 }
+
+.calendar body {
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    color: yellow;
+    text-align: center;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    max-width: 400px;
+    margin: 20px auto;
+    background: gray;
+    padding: 10px;
+    border: 3px solid red;
+}
+
+.day {
+    padding: 10px;
+    background: black;
+    color: yellow;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.day.song {
+    cursor: pointer;
+    color: red;
+}
+
+.player {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    border: 2px solid red;
+    padding: 10px;
+    color: yellow;
+}
+
+.navbar {
+    background-color: #111 !important;
+}
