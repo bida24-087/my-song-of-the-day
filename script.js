@@ -16,13 +16,13 @@
             "15": { title: "In Love - Aaron May", cover: "Aaron.jpg", src: "https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Aaron%20May%20-%20In%20Love%20(Audio).mp3" },
             "16": { title: "Fortunate Carriages - Beyoncé & Maxwell", cover: "beyonce.jpeg", src: "https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Beyonce%20&%20Maxwell%20-%20Fortunate%20Carriages%20(A%20JAYBeatz%20Mashup)%20%23HVLM.mp3" },
             "17": { title: "Of Course You Won't - Lucki", cover: "lucki.png", src: "https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/LUCKI%20-%20OF%20COURSE%20YOU%20WON%E2%80%99T%20%5BaEYCWPcpEys%5D.mp3" }
-            "18": { title: "Do it - Emph4sis", cover: "emph4sis.jpeg", src: ""},
-            "19": { title: "Darkest before dawn - Bashfortheworld", cover: "bashfortheworld", src: ""},
-            "20": { title: "El Manana - Gorillaz", cover: "el manana.jpeg", src: ""},
-            "21": { title: "Uptown Cooling! - Autumn!", cover: "autumn.png", src: ""},
-            "22": { title: "Nasa - Amaarae ft Rvdical The Kid", cover: "nasa.jpeg", src: ""},
-            "23": { title: "Touchin the Ceiling - Offshore", cover: "offshore.jpeg", src: ""},
-            "24": { title: "How to Impress God - Saba ft No ID", cover: "saba.jpeg", src: ""},
+            "18": { title: "Do it - Emph4sis", cover: "emph4sis.jpeg", src: "https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Do%20it.mp3"},
+            "19": { title: "Darkest before dawn - Bashfortheworld", cover: "bashfortheworld", src: "https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Bashfortheworld%20-%20Darkest%20before%20Dawn.mp3"},
+            "20": { title: "El Manana - Gorillaz", cover: "el manana.jpeg", src: "https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Gorillaz%20-%20El%20Ma%C3%B1ana%20(Official%20Video).mp3"},
+            "21": { title: "Uptown Cooling! - Autumn!", cover: "autumn.png", src: "https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Uptown%20Coolin!%20-%20Autumn!%20(Lyrics).mp3"},
+            "22": { title: "Nasa - Amaarae ft Rvdical The Kid", cover: "nasa.jpeg", src: "https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Rvdical%20The%20Kid%20-%20NASA%20ft.%20Amaarae%20(AUDIO).mp3"},
+            "23": { title: "Touchin the Ceiling - Offshore", cover: "offshore.jpeg", src: "https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Touchin%20The%20Ceiling.mp3"},
+            "24": { title: "How to Impress God - Saba ft No ID", cover: "saba.jpeg", src: "https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Saba%20&%20No%20ID%20-%20How%20to%20Impress%20God.mp3"},
         };
 
  function createCalendar() {
