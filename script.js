@@ -1,15 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const audioElements = document.querySelectorAll("audio");
+    const audioPlayers = document.querySelectorAll("audio");
 
-    audioElements.forEach(audio => {
+    audioPlayers.forEach((audio) => {
         audio.addEventListener("play", function () {
-            audioElements.forEach(otherAudio => {
+            audioPlayers.forEach((otherAudio) => {
                 if (otherAudio !== audio) {
                     otherAudio.pause();
+                    otherAudio.currentTime = 0;
                 }
             });
         });
     });
+});
+
 
     const songs = {
         "15": { title: "In Love - Aaron May", cover: "Aaron.jpg", src: "https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Aaron%20May%20-%20In%20Love%20(Audio).mp3" },
