@@ -198,49 +198,67 @@
     text-shadow: 0 0 10px white;
 }
 
-.calendar body {
+.calendar-body {
     font-family: 'Courier New', monospace;
     background-color: black;
-    color: yellow;
+    color: white;
     text-align: center;
+    padding: 20px;
+}
+
+.calendar-header {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-bottom: 2px solid red;
 }
 
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
-    max-width: 400px;
+    max-width: 600px;
     margin: 20px auto;
-    background: gray;
+    background: rgba(255, 255, 255, 0.1);
     padding: 10px;
-    border: 3px solid red;
+    border-radius: 10px;
+    border: 2px solid red;
 }
 
-.day {
-    padding: 10px;
+.calendar .day {
+    padding: 15px;
     background: black;
-    color: yellow;
+    color: white;
     border: 1px solid red;
-    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    transition: transform 0.2s ease-in-out;
 }
 
-.day.song {
+.calendar .day:hover {
+    transform: scale(1.1);
+    background: rgba(255, 0, 0, 0.6);
     cursor: pointer;
-    color: red;
 }
 
-.player {
+.calendar .day.song {
+    color: yellow;
+    font-weight: bold;
+    text-shadow: 0 0 15px yellow;
+}
+
+.calendar .player {
     display: none;
     position: fixed;
-    bottom: 10px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     background: black;
     border: 2px solid red;
-    padding: 10px;
-    color: yellow;
+    padding: 15px;
+    color: white;
+    text-shadow: 0 0 10px yellow;
+    border-radius: 10px;
 }
 
-.navbar {
-    background-color: #111 !important;
+.calendar #audio-player {
+    width: 100%;
 }
