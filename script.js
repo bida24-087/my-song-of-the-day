@@ -10,7 +10,7 @@
                 });
             });
         });
-    });
+    }); 
 
         const songs = {
             "15": { title: "In Love - Aaron May", cover: "Aaron.jpg", src: "https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Aaron%20May%20-%20In%20Love%20(Audio).mp3" },
@@ -25,6 +25,7 @@
             "24": { title: "How to Impress God - Saba ft No ID", cover: "saba.jpeg", src: "https://github.com/bida24-087/my-song-of-the-day/raw/refs/heads/main/Saba%20&%20No%20ID%20-%20How%20to%20Impress%20God.mp3"},
         };
 
+document.addEventListener("DOMContentLoaded", function() {
  function createCalendar() {
     const calendar = document.getElementById("calendar");
     const daysInMonth = 29;
@@ -51,5 +52,5 @@
             }
         });
     });
-}
+  });
  
