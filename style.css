@@ -249,7 +249,10 @@
 }
 
 .calendar .day audio {
-    width: 100%;
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 300px
 }
 
 .calendar p {
