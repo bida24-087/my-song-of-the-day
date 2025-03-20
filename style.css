@@ -205,6 +205,31 @@
     text-shadow: 0 0 5px white;
     background-color: #000;
     color: #fff;
+    background-image: url("calendar.jpg");
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-position: center center;
+
+}
+
+.calendar .day-wrapper {
+    background-color: black; 
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block; 
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); 
+}
+
+.calendar .day-wrapper img,
+.calendar .day-wrapper audio {
+    border-radius: 8px; 
+}
+
+.calendar .day p,
+.calendar .day h3 {
+    color: white; 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.8); 
 }
 
 .calendar .month-container {
@@ -249,8 +274,9 @@
 .calendar .day audio {
     display: block;
     margin: 10px auto;
-    width: 80%;
-    max-width: 300px
+    width: 60%;
+    max-width: 250px;
+    border-radius: 8px;
 }
 
 .calendar p {
