@@ -203,7 +203,6 @@
     text-align: center;
     color: white;
     text-shadow: 0 0 5px white;
-    background-color: #000;
     color: #fff;
     background-image: url("calendar.jpg");
     background-attachment: fixed; 
@@ -213,8 +212,8 @@
 }
 
 .calendar .day-wrapper {
-    background-color: black; 
-    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 20px;
     border-radius: 15px;
     text-align: center;
     display: inline-block; 
@@ -254,7 +253,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     justify-content: center;
-    padding: 20px
+    padding: 20px;
     margin: 20px;
 }
 
