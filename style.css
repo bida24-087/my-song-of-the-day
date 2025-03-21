@@ -203,12 +203,10 @@
     text-align: center;
     color: white;
     text-shadow: 0 0 5px white;
-    color: #fff;
     background-image: url("calendar.jpg");
     background-attachment: fixed; 
     background-size: cover; 
     background-position: center center;
-
 }
 
 .calendar .day-wrapper {
@@ -223,12 +221,6 @@
 .calendar .day-wrapper img,
 .calendar .day-wrapper audio {
     border-radius: 8px; 
-}
-
-.calendar .day p,
-.calendar .day h3 {
-    color: white; 
-    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.8); 
 }
 
 .calendar .month-container {
@@ -278,8 +270,10 @@
     border-radius: 8px;
 }
 
-.calendar p {
+.calendar p, .calendar h2 {
     font-size: 14px;
+    color: white; 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.8); 
     margin: 0;
     padding-bottom: 5px;
 }
