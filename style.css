@@ -201,7 +201,6 @@
 .calendar body {
     font-family: "Courier New", monospace;
     text-align: center;
-    color: white;
     text-shadow: 0 0 5px white;
     background-image: url("calendar.jpg");
     background-attachment: fixed; 
