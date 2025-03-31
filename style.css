@@ -72,8 +72,8 @@
 }
 
 .home .song-log {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: grid !important;
+    grid-template-columns: repeat(autofit, minmax(100px, 1fr));
     justify-content: center;
     gap: 40px;
     padding: 20px;
@@ -236,7 +236,7 @@
 }
 
 .calendar .month-content {
-    display: block;
+    display: inline-block;
 }
 
 .calendar-grid {
