@@ -29,7 +29,10 @@
   </nav>
 
   <div class="container">
-    <form action="mailto:hellolesedii@outlook.com?subject=Feedback Submission" method="GET" enctype="text/plain">
+    <form action="https://formsubmit.co/hellolesedii@outlook.com" method="POST">
+      <input type="hidden" name="_next" value="thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
+
       <fieldset class="mb-4">
         <legend>Who are you?</legend>
         <div class="mb-3">
@@ -46,12 +49,9 @@
           <input type="radio" name="gender" value="female"> Female<br>
           <input type="radio" name="gender" value="other"> Other<br>
         </div>
-      </fieldset>
 
-      <fieldset class="mb-4">
-        <legend>Lemme peep yo mind</legend>
         <div class="mb-3">
-          <label class="form-label">Message:</label>
+          <label class="form-label">Lemme peep yo mind:</label>
           <textarea class="form-control" name="feedback" rows="4" placeholder="Talk to me..."></textarea>
         </div>
       </fieldset>
@@ -79,7 +79,7 @@
         </div>
       </fieldset>
 
-      <input type="submit" value="Submit" class="btn btn-primary" formaction="thankyou.html">
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
 
