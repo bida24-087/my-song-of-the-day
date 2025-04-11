@@ -81,14 +81,14 @@
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
     .home .song-grid {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         justify-content: center;
     }
 }
 
 @media (min-width: 1200px) {
     .home .song-grid {
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         justify-content: center;
     }
 }
