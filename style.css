@@ -295,3 +295,16 @@
     margin: 0;
     padding-bottom: 5px;
 }
+
+.reply-title {
+  color: white;
+}
+
+.reply-box {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reply-body {
+  height: 300px;
+  overflow-y: auto;
+}
