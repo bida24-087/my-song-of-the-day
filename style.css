@@ -71,12 +71,29 @@
     text-decoration: underline;
 }
 
-.home .song-log {
-    display: grid !important;
-    grid-template-columns: repeat(autofit, minmax(100px, 1fr));
+.home .song-log .row {
+    display: grid;
     justify-content: center;
     gap: 40px;
     padding: 20px;
+}
+
+@media (max-width: 767.98px) {
+    .home .song-log .row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .home .song-log .row {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .home .song-log .row {
+        grid-template-columns: repeat(8, 1fr);
+    }
 }
 
 .home .song-entry {
