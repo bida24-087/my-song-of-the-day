@@ -293,15 +293,95 @@
     padding-bottom: 5px;
 }
 
+.feedback html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  background: url("feedback.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.feedback .container {
+  margin-top: 20px;
+}
+
+.form-control,
+.form-check-input {
+  background: rgba(0, 0, 0, 0.6) !important;
+  color: white !important;
+  border: 1px solid #ffffff !important;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+fieldset {
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+legend {
+  color: white;
+  text-decoration: underline;
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+
+.form-check {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #ff6600 !important;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+  background-color: #ff3300 !important;
+}
+
 .reply-title {
   color: white;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .reply-box {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
 }
 
 .reply-body {
-  height: 300px;
+  color: white;
+  font-size: 0.95rem;
+  height: 300px;   
   overflow-y: auto;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .col-md-6.mb-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .reply-box {
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
 }
