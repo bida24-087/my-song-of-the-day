@@ -13,19 +13,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-    const monthContainers = document.querySelectorAll(".month-container");
+  const monthContainers = document.querySelectorAll(".month-container");
 
-    monthContainers.forEach((container) => {
-        const header = container.querySelector(".month-header");
-        const content = container.querySelector(".month-content");
+  monthContainers.forEach((container) => {
+    const header = container.querySelector(".month-header");
+    const content = container.querySelector(".month-content");
 
-        header.addEventListener("click", function () {
-            const isVisible = content.style.display === "block";
+    header.addEventListener("click", function () {
+      const currentDisplay = window.getComputedStyle(content).display;
 
-            content.style.display = isVisible ? "none" : "block";
-
-            const monthName = header.textContent.split(" ")[0];
-            header.textContent = `${monthName} ${isVisible ? "▲" : "▼"}`;
-        });
+      if (currentDisplay === "none") {
+        content.style.display = "inline-block";
+        header.textContent = header.textContent.replace("▲", "▼");
+      } else {
+        content.style.display = "none";
+        header.textContent = header.textContent.replace("▼", "▲");
+      }
     });
+  });
 });
