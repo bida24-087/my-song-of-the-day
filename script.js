@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const content = container.querySelector(".month-content");
 
     header.addEventListener("click", function () {
+        const currentDisplay = getComputedStyle(content).display;
     if (currentDisplay === "none") {
         content.style.display = "inline-block";
         header.textContent = header.textContent.replace("▲", "▼");
