@@ -13,33 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const monthHeader = document.querySelector(".month-header");
-    const monthContent = document.querySelector(".month-content");
+    const monthContainers = document.querySelectorAll(".month-container");
 
-    monthHeader.addEventListener("click", function () {
-        if (monthContent.style.display === "none" || monthContent.style.display === "") {
-            monthContent.style.display = "block";
-            monthHeader.textContent = "February ▼";
-        } else {
-            monthContent.style.display = "none";
-            monthHeader.textContent = "February ▲";
-        }
+    monthContainers.forEach((container) => {
+        const header = container.querySelector(".month-header");
+        const content = container.querySelector(".month-content");
+
+        header.addEventListener("click", function () {
+            const isVisible = content.style.display === "block";
+
+            content.style.display = isVisible ? "none" : "block";
+
+            const monthName = header.textContent.split(" ")[0];
+            header.textContent = `${monthName} ${isVisible ? "▲" : "▼"}`;
+        });
     });
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-    const monthHeader = document.querySelector(".month-header");
-    const monthContent = document.querySelector(".month-content");
-
-    monthHeader.addEventListener("click", function () {
-        if (monthContent.style.display === "none" || monthContent.style.display === "") {
-            monthContent.style.display = "block";
-            monthHeader.textContent = "March ▼";
-        } else {
-            monthContent.style.display = "none";
-            monthHeader.textContent = "March ▲";
-        }
-    });
-});
-
