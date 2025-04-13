@@ -11,25 +11,24 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     });
-});
 
-  const monthContainers = document.querySelectorAll(".month-container");
+    const monthContainers = document.querySelectorAll(".month-container");
 
-  monthContainers.forEach((container) => {
-    const header = container.querySelector(".month-header");
-    const content = container.querySelector(".month-content");
+    monthContainers.forEach((container) => {
+        const header = container.querySelector(".month-header");
+        const content = container.querySelector(".month-content");
 
-    header.addEventListener("click", function () {
-        const currentDisplay = getComputedStyle(content).display;
-    if (currentDisplay === "none") {
-        content.style.display = "inline-block";
-        header.textContent = header.textContent.replace("▲", "▼");
-      } else {
-        content.style.display = "none";
-        header.textContent = header.textContent.replace("▼", "▲");
-      }
+        header.addEventListener("click", function () {
+            const currentDisplay = getComputedStyle(content).display;
+            if (currentDisplay === "none") {
+                content.style.display = "inline-block";
+                header.textContent = header.textContent.replace("▲", "▼");
+            } else {
+                content.style.display = "none";
+                header.textContent = header.textContent.replace("▼", "▲");
+            }
+        });
     });
-  });
-});
 
-console.log("Script loaded!");
+    console.log("Script loaded!");
+});
