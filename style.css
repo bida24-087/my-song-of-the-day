@@ -348,12 +348,12 @@ legend {
 }
 
 .btn-primary {
-  color: #000;
   background-color: white !important;
   border: 1px solid #ccc;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-color: black;
 }
 
 .btn-primary:hover {
